@@ -5,6 +5,25 @@ import data from "./data";
 function App() {
 	const [people, setPeople] = useState(data);
 	const [index, setIndex] = useState(0);
+
+	// prevents the index from going negative. Allows it to constantly repeat the cycle.
+	useEffect(() => {
+		const lastIndex = people.length - 1;
+		if (index < 0) {
+			setIndex(lastIndex);
+		}
+		if (index > lastIndex) {
+			setIndex(0);
+		}
+	}, [index]);
+	// goes to next slider every 3000 seconds
+	useEffect(() => {
+		let slider = setInterval(() => {
+			setIndex(index + 1);
+		}, 3000);
+		return () => clearInterval(slider);
+	}, [index]);
+
 	return (
 		<section className="section">
 			<div className="title">

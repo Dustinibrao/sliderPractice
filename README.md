@@ -1,5 +1,20 @@
-# react-projects-7-slider
+# Review Slider 
 
-#### IN ACTION
+Simple review slider practice using React.
 
-[Gatsby-Airtable Project](https://gatsby-airtable-design-project.netlify.app/)
+## Description
+
+Displays reviews that you can cycle between, displaying one at a time.
+## Showcases
+
+-   HTML5 and CSS3
+-   React
+
+## Getting Started
+
+### Executing program
+
+```
+npm install
+npm start
+```
