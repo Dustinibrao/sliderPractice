@@ -1,4 +1,4 @@
-<<<<<<< final
+
 # Review Slider 
 
 Simple review slider practice using React.
@@ -19,6 +19,4 @@ Displays reviews that you can cycle between, displaying one at a time.
 npm install
 npm start
 ```
-=======
 
->>>>>>> main
